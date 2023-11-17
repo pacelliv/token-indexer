@@ -39,7 +39,7 @@ npm run build
 npm run preview
 ```
 
-Visit http://localhost:5173/erc20-indexer or http://localhost:5173/nft-indexer an start making queries.
+After building and launching the local environment visit the `/erc20-indexer` and `nft-indexer` pages and start making queries.
 
 ### Built With 👷🏻‍♀️👷🏻
 
