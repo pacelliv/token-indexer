@@ -11,7 +11,7 @@ export type TokenMetadata = {
     result: Result
 }
 
-type TokenBalance = {
+export type TokenBalance = {
     balance: string | null
     decimals?: number
 }
