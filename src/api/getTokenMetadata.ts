@@ -1,17 +1,5 @@
 import {TokenBalancesResponse} from "alchemy-sdk"
-
-type Result = {
-    decimals?: number
-    logo?: string
-    symbol?: string
-    name?: string
-}
-
-type TokenMetadata = {
-    id: number
-    jsonrpc: string
-    result: Result
-}
+import {Result, TokenMetadata} from "../types/erc20-types"
 
 export const getTokenMetadata = async (erc20Balances: TokenBalancesResponse) => {
     const batchRequests = JSON.stringify(

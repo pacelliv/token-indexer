@@ -2,40 +2,12 @@ import {getERC20Balances} from "../api/getERC20Balances"
 import {getTokenMetadata} from "../api/getTokenMetadata"
 import {TokenBalancesResponse, Utils} from "alchemy-sdk"
 import {ActionFunctionArgs, useActionData, useNavigation} from "react-router-dom"
+import {TokenData, TokenMetadata} from "../types/erc20-types"
 import Placeholder from "../components/Placeholder"
 import NoBalancePlaceholder from "../components/NoBalancePlaceholder"
 import Loader from "../components/Loader"
 import TokenBalancesTable from "../components/TokenBalancesTable"
 import SearchBar from "../components/SearchBar"
-
-type Result = {
-    decimals?: number
-    logo?: string
-    symbol?: string
-    name?: string
-}
-
-type TokenMetadata = {
-    id: number
-    jsonrpc: string
-    result: Result
-}
-
-type TokenBalance = {
-    balance: string | null
-    decimals?: number
-}
-
-type TokenData = {
-    // `tokenBalance` is treated as `string` in `TokenData`
-    // but in `TokenBalancesResponse is treated as `string | null`
-    tokenBalance: TokenBalance
-    contractAddress: string
-    decimals?: number
-    logo?: string
-    symbol?: string
-    name?: string
-}
 
 export const action = async ({request}: ActionFunctionArgs) => {
     const address = (await request.formData()).get("address")
