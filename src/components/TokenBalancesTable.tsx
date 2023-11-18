@@ -3,22 +3,7 @@ import {useReactTable, getCoreRowModel, flexRender, createColumnHelper} from "@t
 import {Utils} from "alchemy-sdk"
 import {formatBalance} from "../utils/formatBalance"
 import {FaExternalLinkAlt} from "react-icons/fa"
-
-type TokenBalance = {
-    balance: string | null
-    decimals?: number
-}
-
-type TokenData = {
-    // `tokenBalance` is treated as `string` in `TokenData`
-    // but in `TokenBalancesResponse is treated as `string | null`
-    tokenBalance: TokenBalance
-    contractAddress: string
-    decimals?: number
-    logo?: string
-    symbol?: string
-    name?: string
-}
+import {TokenData} from "../types/erc20-types"
 
 const TokenBalancesTable = ({tokenData}: {tokenData: TokenData[]}) => {
     const data: TokenData[] = useMemo(() => tokenData, [])
