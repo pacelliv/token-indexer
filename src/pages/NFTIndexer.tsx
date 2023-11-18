@@ -1,5 +1,5 @@
 import {getNFTs} from "../api/getNFTs"
-import {OwnedNftsResponse} from "../types/types"
+import {OwnedNftsResponse} from "../types/nft-types"
 import {ActionFunctionArgs, useActionData, useNavigation} from "react-router-dom"
 import Placeholder from "../components/Placeholder"
 import NoBalancePlaceholder from "../components/NoBalancePlaceholder"

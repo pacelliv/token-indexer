@@ -1,4 +1,4 @@
-import {OwnedNftsResponse} from "../types/types"
+import {OwnedNftsResponse} from "../types/nft-types"
 import {getClass} from "../utils/getClass"
 import Image from "./Image"
 

@@ -1,4 +1,4 @@
-import {OwnedNftsResponse} from "../types/types"
+import {OwnedNftsResponse} from "../types/nft-types"
 
 type Params = {
     address: string
