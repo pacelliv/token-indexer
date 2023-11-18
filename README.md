@@ -1,6 +1,6 @@
 ## Week 6 project - Indexeum 👾
 
-### ⚡️⚡️ [Live Demo]()
+### ⚡️⚡️ [Live Demo](https://heartfelt-souffle-0fc1e6.netlify.app)
 
 ### Overview
 
