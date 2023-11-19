@@ -1,10 +1,6 @@
 import {MdOutlineMoneyOff} from "react-icons/md"
 
-type Params = {
-    message: string
-}
-
-const NoBalancePlaceholder = ({message}: Params) => {
+const NoBalancePlaceholder = ({message}: {message: string}) => {
     return (
         <div className="my-12 flex w-full flex-grow flex-col items-center justify-center gap-4 rounded-3xl border-2 border-dashed border-zinc-600 p-12 text-gray-500 opacity-40 dark:text-gray-400">
             <MdOutlineMoneyOff className="text-7xl" />
