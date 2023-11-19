@@ -1,10 +1,6 @@
 import {OwnedNftsResponse} from "../types/nft-types"
 
-type Params = {
-    address: string
-}
-
-export const getNFTs = async ({address}: Params) => {
+export const getNFTs = async ({address}: {address: string}) => {
     const URL = `https://eth-mainnet.g.alchemy.com/nft/v3/${
         import.meta.env.VITE_MAINNET_API_KEY
     }/getNFTsForOwner?owner=${address}&withMetadata=true&pageSize=100`
