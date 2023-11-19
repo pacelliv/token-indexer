@@ -17,8 +17,6 @@ export interface TokenBalance {
 }
 
 export interface TokenData {
-    // `tokenBalance` is treated as `string` in `TokenData`
-    // but in `TokenBalancesResponse is treated as `string | null`
     tokenBalance: TokenBalance
     contractAddress: string
     decimals?: number
