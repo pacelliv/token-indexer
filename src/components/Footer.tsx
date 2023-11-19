@@ -39,13 +39,13 @@ const Footer = () => {
                     </address>
                 </div>
                 <nav className="hidden flex-col gap-5 md:flex" aria-label="footer">
-                    <a href="#indexers" className="font-medium hover:opacity-90">
+                    <a href="#" className="font-medium hover:opacity-90">
                         Indexers
                     </a>
-                    <a href="#testimonials" className="font-medium hover:opacity-90">
+                    <a href="#" className="font-medium hover:opacity-90">
                         Testimonials
                     </a>
-                    <a href="#contact" className="font-medium hover:opacity-90">
+                    <a href="#" className="font-medium hover:opacity-90">
                         Contact Us
                     </a>
                 </nav>
