@@ -1,10 +1,10 @@
 import {TokenBalancesResponse} from "alchemy-sdk"
 
-type Params = {
+export const getERC20Balances = async ({
+    address,
+}: {
     address: string
-}
-
-export const getERC20Balances = async ({address}: Params): Promise<TokenBalancesResponse> => {
+}): Promise<TokenBalancesResponse> => {
     const requestBody = JSON.stringify({
         jsonrpc: "2.0",
         id: 0,
