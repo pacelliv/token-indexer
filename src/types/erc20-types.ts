@@ -1,22 +1,22 @@
-export type Result = {
+export interface Result {
     decimals?: number
     logo?: string
     symbol?: string
     name?: string
 }
 
-export type TokenMetadata = {
+export interface TokenMetadata {
     id: number
     jsonrpc: string
     result: Result
 }
 
-export type TokenBalance = {
+export interface TokenBalance {
     balance: string | null
     decimals?: number
 }
 
-export type TokenData = {
+export interface TokenData {
     // `tokenBalance` is treated as `string` in `TokenData`
     // but in `TokenBalancesResponse is treated as `string | null`
     tokenBalance: TokenBalance
