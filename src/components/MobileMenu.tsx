@@ -1,12 +1,13 @@
 import {Dispatch} from "react"
 import {NavLink} from "react-router-dom"
 
-type MobileMenuProps = {
+const MobileMenu = ({
+    open,
+    setOpen,
+}: {
     open: boolean
     setOpen: Dispatch<React.SetStateAction<boolean>>
-}
-
-const MobileMenu = ({open, setOpen}: MobileMenuProps) => {
+}) => {
     return (
         <section
             onClick={() => setOpen((prevState) => !prevState)}
