@@ -7,7 +7,7 @@ const Loader = () => {
                 height="120"
                 width="120"
                 color="limegreen"
-                ariaLabel="triangle-loading"
+                ariaLabel="triangle-loader"
                 visible={true}
             />
             <p className="text-2xl">Fetching balances...</p>
