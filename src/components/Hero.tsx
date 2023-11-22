@@ -19,7 +19,7 @@ const Hero = () => {
                 </p>
             </article>
             <img
-                className="max-w-xs"
+                className="w-1/2"
                 src="./ethereum-eth-logo-colored.svg"
                 alt="Ethereum Colored Logo"
             />
