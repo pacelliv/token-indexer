@@ -1,6 +1,7 @@
 {
-    "name": "token-indexer",
+    "name": "indexeum",
     "version": "0.1.0",
+    "description": "Query any address on Ethereum for its ERC20 or NFT balances",
     "type": "module",
     "scripts": {
         "dev": "vite",
