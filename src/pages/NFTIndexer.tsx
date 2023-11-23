@@ -33,7 +33,7 @@ const NFTIndexer = () => {
             (actionData?.totalCount as number) > 0 ? (
                 <NFTs tokenData={actionData as OwnedNftsResponse} />
             ) : null}
-            {navigation.state === "submitting" ? <Loader /> : null}
+            {navigation.state === "submitting" ? <Loader message="NFTs" /> : null}
             {navigation.state === "idle" && actionData?.totalCount === 0 ? (
                 <NoBalancePlaceholder message={"NFT"} />
             ) : null}

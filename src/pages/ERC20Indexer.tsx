@@ -58,7 +58,7 @@ const ERC20Indexer = () => {
             filteredData.length > 0 ? (
                 <TokenBalancesTable tokenData={filteredData} />
             ) : null}
-            {navigation.state === "submitting" ? <Loader /> : null}
+            {navigation.state === "submitting" ? <Loader message="tokens" /> : null}
             {navigation.state === "idle" && filteredData?.length === 0 ? (
                 <NoBalancePlaceholder message={"token"} />
             ) : null}
